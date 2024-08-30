@@ -1,0 +1,33 @@
+.detailed-section {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detailed-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.detailed-section h2 {
+    color: #4caf50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.detailed-section ol, .detailed-section ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.detailed-section h3 {
+    color: #4caf50;
+    font-size: 2em;
+    margin-top: 20px;
+}
+

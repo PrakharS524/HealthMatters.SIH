@@ -1,0 +1,185 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: white;
+}
+
+#search-bar {
+    padding: 10px;
+    font-size: 1em;
+    width: 40%;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #2e7d32;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #388e3c;
+    padding: 10px 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+}
+
+.nav-bar a:hover {
+    background-color: #2e7d32;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4caf50;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.yoga-poses, .pranayams, .meditation-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.pose, .pranayam, .method {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 40px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.pose img, .pranayam img, .method img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.pose:hover, .pranayam:hover, .method:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    color: #4caf50;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.learn-more-btn:hover {
+    background-color: #388e3c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Moving Palette and Slider */
+.moving-palette {
+    height: 40vh;
+    width: 100%;
+    padding: 1vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.slider {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* .slide {
+    width: calc(100% / 5); 
+    flex-shrink: 0;
+    height: 100px;
+} */
+
+.slide img {
+    height: 110%;
+    width: 16.5%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.2s;
+}
+
+.slider img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes slide {
+    from { 
+        transform: translateX(0); 
+    }
+    to {
+         transform: translateX(-100%); 
+        } /* Adjust to match full width */
+}
